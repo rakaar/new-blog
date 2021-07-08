@@ -2,7 +2,7 @@
 layout: post
 date: 2020-11-28
 subtitle: First post in journey of documenting random thoughts
-tags: [random]
+categories: [random]
 title: Planning to restart writting
 ---
 
