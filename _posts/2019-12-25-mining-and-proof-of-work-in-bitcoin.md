@@ -33,13 +33,18 @@ A block in a blockchain consists of these following things(* means will explain 
 * Transactions: The actual list of transactions
 # Merkle Root:
 It is the hash of the transactions in a tree fashion. In simpler words, Merkle root is the summary hash of all the transactions of a given block. Check the below image for clarity.
-![Merkle Root](/img/mining-merkle-root.jpg)
+![Merkle Root](https://imgur.com/60c1MUC.png)
+
 Why do you have to do that? Why not just hash all of them Linearly at once?
 The main reason behind this is that it will be computationally cheaper to verify whether a single transaction is present or not in this case.  
 Suppose there are 8 transactions, as per the below image and we hash all of them linearly to obtain the summary, to verify any transaction we need all the other 7 transactions, Check the image below
-![Non Merkle Root 7 are required](/img/mining-merkle-7.jpg)
+
+![Non Merkle Root 7 are required](https://imgur.com/2ANo5a2.png)
+
 In case of a tree, you need just three hashes that are marked in blue to verify whether that particular transaction exists or not
-![Merkle only 3 are required](/img/mining-merkle-3.jpg)
+
+![Merkle only 3 are required](https://imgur.com/hNwsePW.png)
+
 BlockHash:
 Block hash is obtained by hashing these three things - Previous Blockhash, Merkle root, and Nonce. 
 Nonce:
@@ -86,10 +91,12 @@ And if there are less number of miners, it means the blocks are mined slowly, he
 And this is changed on observing the average block time of the last 2016 blocks(approximately every 2 weeks, why?
 2016 x 10 mins = 20160 mins  = 14 days = 2 Weeks).
 To quantify the above words:
-![Hash Target](/img/mining-hash-target.png)
+
+![Hash Target](https://imgur.com/kkP3jMI.png)
+
 *Image Credits from [this blog](http://blog.geveo.com/Blockchain-Mining-Difficulty)*
 
 # Final words
 Currently, Most of the mining in bitcoin is not done individually. People who mine come together and form Mining pools. Here, under the guidance of a pool manager, profits are distributed accordingly as per various pool schemes. 
 This is just one of the many interesting aspects of Bitcoin. Finally, I would like to conclude with this beautiful tweet!
-![Tweet](/img/mining-final-tweet.png)
+![Tweet](https://imgur.com/Ci92KRS.png)
