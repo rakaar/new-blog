@@ -52,7 +52,17 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# prose.io config
+
+# Character used to separate site title and description in HTML document title
+# and RSS feed title
+title-separator: "-"
+permalink: /posts/:year-:month-:day-:title/
+
+# Use tags index page and make tags on each post clickable
+link-tags: true
+
+
+# prose.io config to include images with syntax ![caption](image link)
 prose:
   rooturl: '_posts'
   media: 'img'
