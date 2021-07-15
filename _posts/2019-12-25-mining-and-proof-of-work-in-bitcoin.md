@@ -3,7 +3,8 @@ layout: post
 title:  "Mining and Proof of Work in Bitcoin"
 subtitle: "Understanding the mining details of bitcoin"
 date:   2019-12-25
-categories: [crypto, blockchain]
+# categories: [crypto, blockchain]
+tags: crypto blockchain
 ---
 
 # Introduction
